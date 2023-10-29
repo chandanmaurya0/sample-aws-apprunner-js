@@ -2,8 +2,11 @@ const express = require('express');
 
 const app = express();
 
+//  import the dotenv module
+require('dotenv').config();
+
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send(`Hello World- ${process.env.ENVIRONMENT}`);
 });
 
 app.listen(3000, () => {

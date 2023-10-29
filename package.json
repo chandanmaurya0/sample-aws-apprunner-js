@@ -1,0 +1,14 @@
+{
+  "name": "sample-aws-apprunner",
+  "version": "1.0.0",
+  "description": "sample AWS App Runner REST API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

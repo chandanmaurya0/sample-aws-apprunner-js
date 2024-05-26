@@ -2,13 +2,19 @@ const express = require('express');
 
 const app = express();
 
+
+// set server Port
+const PORT=3000;
+
 //  import the dotenv module
 require('dotenv').config();
 
+// root endpoint
 app.get('/', (req, res) => {
     res.send(`Hello World- ${process.env.ENVIRONMENT}`);
 });
 
-app.listen(3000, () => {
-    console.log('Example app listening on port 3000!');
+// start server
+app.listen(PORT, () => {
+    console.log(`Example app listening on port ${PORT}!- http://localhost:${PORT}`);
 });
